@@ -1,0 +1,42 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+<div class="container">
+    <div class="row">
+        <div class="col-1">User</div>
+        <div class="col-3"><input id="txtUser" type="text" /> </div>
+    </div>
+    <div class="row">
+        <div class="col-1">Msg</div>
+        <div class="col-3"><input id="txtMsg" type="text" /> </div>
+    </div>
+    <div class="row">
+        <div class="col-4"><input id="btnSend" type="button" value="send" /> </div>
+    </div>
+    <div class="row">
+        <div class="col-4"><ul id="lstMsg" ></ul> </div>
+    </div>
+</div>
+
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+
+@section Scripts{
+    <script  src="~/microsoft/signalr/dist/browser/signalr.js"></script>
+    <script src="~/js/chat.js"></script>
+}
+
+
+
+
+
+
+
+
+
+

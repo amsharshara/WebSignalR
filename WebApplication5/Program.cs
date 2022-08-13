@@ -26,4 +26,5 @@ app.UseAuthorization();
 
 app.MapRazorPages();
 app.MapHub<MsgHub>("/MsgHub");
+app.MapHub<UsersOnlineHub>("/UsersOnlineHub");
 app.Run();

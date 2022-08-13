@@ -5,6 +5,11 @@
 }
 <div class="container">
     <div class="row">
+        <div class="col-1">Online Users:</div>
+        <div class="col-3"><span id="usersOnline" /> </div>
+    </div>
+
+    <div class="row">
         <div class="col-1">User</div>
         <div class="col-3"><input id="txtUser" type="text" /> </div>
     </div>
@@ -29,6 +34,7 @@
 @section Scripts{
     <script  src="~/microsoft/signalr/dist/browser/signalr.js"></script>
     <script src="~/js/chat.js"></script>
+    <script src="~/js/UsersOnline.js"></script>
 }
 
 
